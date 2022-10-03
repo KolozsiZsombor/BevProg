@@ -12,10 +12,9 @@ class Szuperhos:
     def szuperero(self, ertek):
         self._szuperero = ertek
 
-    
+    def __str__(self):
+        return self._nev + f"Egy szuperhős, akinkek a szuperereje {str(self._szuperero)} "
 
 hos1 = Szuperhos("Thor",70)
 
-hos1.szuperero = 13
-
-print(hos1.szuperero)
+print(hos1)
