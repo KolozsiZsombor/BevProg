@@ -19,15 +19,16 @@ class Szuperhos:
         return self._nev == masik_hos._nev and self._szuperero == masik_hos._szuperero
 
     def __add__(self, masik_hos):
-        uj_szuperero = self._szuperero + masik_hos._szuperero
-        uj_szuperhos = Szuperhos("Megahős", uj_szuperero)
-        return uj_szuperhos
+        if isinstance(masik_hos, Szuperhos):
+            uj_szuperero = self._szuperero + masik_hos._szuperero
+            uj_szuperhos = Szuperhos("Megahős", uj_szuperero)
+            return uj_szuperhos
 
 hos1 = Szuperhos("Thor",70)
 hos2 = Szuperhos("Hulk",80)
 hos3 = Szuperhos("Pikachu",80085)
 hos4 = hos1 + hos2
+hos5 = 6 + 2
 
-print(hos2 == hos3)
+print(hos5 == hos2)
 print(hos4)
-print(hos1)
