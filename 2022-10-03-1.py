@@ -1,9 +1,17 @@
 class Szuperhos:
     def __init__(self, nev, szuperero = 50):
-        self.nev = nev
-        self.szuperero = szuperero
-        print("--Szuperhős létrehozva--")
+        self._nev = nev
+        self._szuperero = szuperero 
+        # print("--Szuperhős létrehozva--")
+
+    def get_szuperero(self):
+            return self._szuperero
+
+    def set_szuperero(self, ertek):
+            self.szuperero = ertek
 
 hos1 = Szuperhos("Thor",70)
 
-print()
+hos1.set_szuperero(455)
+
+print(hos1.get_szuperero())
