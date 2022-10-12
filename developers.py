@@ -13,5 +13,10 @@ developer4 = Developer("Éva","KefERP","Frontend")
 
 developers = [developer1,developer2,developer3,developer4]
 
+n = 0
+roles = []
+crole = ""
+
 for i in developers:
-    print(i[1])
+    n += 1
+    developer1.role
