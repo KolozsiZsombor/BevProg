@@ -19,4 +19,5 @@ crole = ""
 
 for i in developers:
     n += 1
-    developer1.role
+    crole = i.role
+    print(i,n)
