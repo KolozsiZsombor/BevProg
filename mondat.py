@@ -22,4 +22,4 @@ def main():
     print(f"Betűk gyakorisága: {nums}")
 
 if __name__ == "__main__":
-    print(main())
+    main()
