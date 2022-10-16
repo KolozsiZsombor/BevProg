@@ -64,7 +64,6 @@ def main():
 
         for i in same:
             print(f"{i} " "", end="")
-
         print(" dolgoznak egy projecten.")
 
 
