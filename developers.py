@@ -20,6 +20,7 @@ cproject = ""
 cname = ""
 kp = []
 j = None
+ip = None
 
 for i in developers:
     n += 1
@@ -34,7 +35,11 @@ if len(prjs) == len(projects):
     print("Mindenki más-más projecten dolgozik.")
 else:
 	for i in projects:
-		k = j
-		j = i[0]
-		if k == j:
-			print(i)
+		for j in i:
+			print(j)
+		
+		# ip = 
+		# k = j
+		# j = i[0]
+		# if k == j:
+			# print(i)
