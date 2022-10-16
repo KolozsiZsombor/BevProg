@@ -30,5 +30,7 @@ hos3 = Szuperhos("Pikachu",80085)
 hos4 = hos1 + hos2
 hos5 = 6 + 2
 
+print(hos1)
+
 print(hos5 == hos2)
 print(hos4)
