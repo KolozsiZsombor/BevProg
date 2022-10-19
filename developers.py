@@ -7,28 +7,20 @@ def main():
             print("--Developer létrehozva--")
             print(f"{name} a {project}-en dolgozik {role} szerepkörben.")
 
-    developer1 = Developer("Ricsi", "SolArch", "Frontend")
-    developer2 = Developer("Angéla", "ZerTeng", "Tesztelő")
-    developer3 = Developer("Peti", "KefERP", "Backend")
-    developer4 = Developer("Éva", "KefERP", "Frontend")
+    developers = []
 
-    developers = [developer1, developer2, developer3, developer4]
+    developers.append(developer1 := Developer("Ricsi", "SolArch", "Frontend"))
+    developers.append(developer2 := Developer("Angéla", "ZerTeng", "Tesztelő"))
+    developers.append(developer3 := Developer("Peti", "KefERP", "Backend"))
+    developers.append(developer4 := Developer("Éva", "KefERP", "Frontend"))
 
-    n = -1
     projects = []
     prjs = set()
-    cproject = ""
-    cname = ""
-    j = None
 
     for i in developers:
-        n += 1
-        cproject = i._project
-        cname = i._name
-        projects.append([cproject, cname, n])
-        prjs.add(cproject)
+        projects.append([i._project, i._name])
+        prjs.add(i._project)
 
-    k = None
     Flag = False
     n = 0
 
@@ -36,7 +28,6 @@ def main():
         print("Mindenki más-más projecten dolgozik.")
         Flag = True
 
-    projects = sorted(projects)
     projectDict = dict()
 
     if not Flag:
@@ -59,7 +50,6 @@ def main():
         for i in developers:
             if i._project == m:
                 same.append(i._name)
-
         n = -1
 
         for i in same:
