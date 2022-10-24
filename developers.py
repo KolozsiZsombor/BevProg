@@ -60,12 +60,9 @@ def main():
             if i._project == m:
                 same.append(i._name)
 
-        n = -1
-
         for i in same:
             print(f"{i} " "", end="")
         print(" dolgoznak egy projecten.")
-
 
 if __name__ == "__main__":
     main()
