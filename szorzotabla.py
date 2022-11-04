@@ -9,7 +9,7 @@ def main():
     for i in range(1,13):
         l=str(i)
         l=l+"\t"
-        print(l.expandtabs(3),":| ",end="")
+        print(l.expandtabs(3),": ",sep="",end="")
         for k in range(1,13):
             txt = str(i*k)
             txt = txt+"\t"
