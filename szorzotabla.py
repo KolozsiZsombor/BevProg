@@ -1,5 +1,5 @@
 def main():
-    print(" "*7,end="")
+    print("\t".expandtabs(7),end="")
     for j in range(1,13):
         l=str(j)
         l=l+"\t"
@@ -11,9 +11,9 @@ def main():
         l=l+"\t"
         print(l.expandtabs(3),":| ",end="")
         for k in range(1,13):
-            txt = str(i*k)
-            txt = txt+"\t"
-            print(txt.expandtabs(4),end="")
+            l = str(i*k)
+            l = l+"\t"
+            print(l.expandtabs(4),end="")
         print()
             
 if __name__ == "__main__":
