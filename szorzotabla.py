@@ -1,5 +1,5 @@
 def main():
-    print(" "*7,end="")
+    print("\t".expandtabs(5),end="")
     for j in range(1,13):
         l=str(j)
         l=l+"\t"
