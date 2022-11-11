@@ -4,19 +4,19 @@ def main():
     line = ""
     n = 1
     import string; special = string.punctuation
+    mgh = ["a","á","e","é","i","í","o","ó","ö","ő","u","ú","ü","ű","y"]
     file = open("hazi.txt","r",encoding="utf-8")
     l = file.readlines()
     for i in l:
         i = i.strip()
         if len(i) != 0:
             for c in i:
-                if c not in special:
+                if c not in special and c not in mgh:
                     line += c
             out = open("kihazi.txt","a",encoding="utf-8") 
             out.write(line)
             out.write("\n")
             line = ""
-    out.close()
     file = open("kihazi.txt","r",encoding="utf-8")
     l = file.readlines()
     for i in l:
@@ -24,8 +24,6 @@ def main():
             out = open("kihazifinal.txt","a",encoding="utf-8")
             out.write(i)
         n += 1
-    out.close()
-    import os;os.remove("kihazi.txt")
 
 
 
