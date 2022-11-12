@@ -25,8 +25,7 @@ def main():
             out.write(i)
         n += 1
 
-
-
-
 if __name__ == "__main__":
     main()
+    import os
+    os.remove("kihazi.txt")
