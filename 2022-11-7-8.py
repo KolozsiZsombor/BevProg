@@ -6,7 +6,6 @@ def main():
             sen += sor
     letS = set()
     letL = []
-    revd = ""
     nums = dict()
     n = 0
     splitsen = sen.split()
