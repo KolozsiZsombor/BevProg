@@ -1,0 +1,1 @@
+{'Rick Astley': 213, 'Imagine Dragons': 392, 'Dragonforce': 445, 'Boney M.': 284, 'Steppenwolf': 216, 'Powerwolf': 739, 'Smash Mouth': 237, 'Nirvana': 279, 'Gloryhammer': 265, 'Dschinghis Khan': 460, 'Bonnie Tyler': 334, 'Gopnik McBlyat': 261, 'Foster The People': 253, 'Linkin Park': 219, 'Green Day': 288, 'Korpiklaani': 194}
