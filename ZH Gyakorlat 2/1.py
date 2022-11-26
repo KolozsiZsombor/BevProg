@@ -92,8 +92,36 @@ def main():
 
     # 6.feladat
     def zeneket_listaz(lejatszasiLista):
-        pass
-    
+        eloadoNevIn = input("Adjon meg egy előado nevet: ")
+        eloadoNevInL = eloadoNevIn.lower()
+        eloadoNevFinal = ""
+        for i in eloadoNevInL:
+            if i == " ":
+                eloadoNevFinal += "_"
+            else:
+                eloadoNevFinal += i
+        
+        open(f"06_{eloadoNevFinal}_dalok.txt","w",encoding="utf-8")
+        out = open(f"06_{eloadoNevFinal}_dalok.txt","a",encoding="utf-8")
+        
+        eloadok = set()
+        eloadonk = []
+
+        for i in lejatszasiLista:
+            eloadok.add(i["eloado"].lower())
+
+        if eloadoNevIn.lower() in eloadok:
+            eloadonk.append(eloadoNevIn.lower())
+            eloadonk.append(eloadoNevIn.upper())
+            eloadonk.append(eloadoNevIn)
+
+        if eloadoNevIn not in eloadok and eloadoNevIn not in eloadonk:
+            out.write("Nincs ilyen előadó a lejátszási listában!")
+
+        print(eloadonk)
+        print(eloadok)
+
+
     beolvasas()
     teljes_hossz(beolvasas())
     leghosszab_rockzene(beolvasas())
@@ -103,4 +131,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
